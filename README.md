@@ -76,9 +76,9 @@ For the Long-Text Multilabel (LLM) task, we chose the BERT model. Due to GPU lim
 
 | Model | Sample Size | Accuracy | Jaccard Score | Hamming Loss |
 |-------|-------------|----------|---------------|--------------|
-| SVC   | ~44000        | 0.56     | 0.58          | 0.0376       |
-| SGD   | ~44000        | 0.52     | 0.52          | 0.04         |
-| BERT  | ~44000        | 0.77     | 0.58          | 0.0376       |
+| SVC   | ~44000        | 0.56     | 0.58          | 0.03       |
+| SGD   | ~44000        | 0.52     | 0.52          | 0.04       |
+| BERT  | ~44000        | 0.77     | 0.67          | 0.03       |
 
 
 
