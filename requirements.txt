@@ -1,0 +1,10 @@
+pandas
+matplotlib
+seaborn
+nltk
+tqdm
+scikit-learn
+tensorflow
+transformers
+matplotlib
+
