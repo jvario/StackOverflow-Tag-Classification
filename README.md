@@ -80,10 +80,10 @@ For the Long-Text Multilabel (LLM) task, we chose the BERT model. Due to GPU lim
 | SGD   | ~44000        | 0.52     | 0.52          | 0.04       |
 | BERT  | ~44000        | 0.77     | 0.67          | 0.03       |
 
-
-
 This table represents the evaluation results for different models based on question **scores** **greater than 5**, filtered for the **most common** **15 tags**. The metrics include accuracy, Jaccard score, and Hamming loss.
 
+# IV. Conclusion:
+Based on the evaluation results presented in the table, it is evident that the BERT model outperforms both the SVC and SGD models in terms of accuracy and Jaccard score. With an accuracy of 0.77 and a Jaccard score of 0.67, BERT demonstrates superior performance compared to SVC and SGD, which have accuracies of 0.56 and 0.52, and Jaccard scores of 0.58 and 0.52, respectively. Additionally, all three models exhibit low Hamming loss, indicating efficient performance in multi-label classification tasks. These findings suggest that BERT is a promising model for accurately predicting tags based on question scores greater than 5, particularly when considering the most common 15 tags. Furthermore, it's essential to acknowledge that with sufficient resources and adequate time allocation, there is potential for even better results and more in-depth investigation. Given the constraints faced in this study, including limited computational resources and time, further exploration and optimization could yield improved model performance and deeper insights into the dataset. It's worth noting that the dataset used for training and evaluation was substantial, requiring significant computational resources. Despite this limitation, the results obtained provide valuable insights into the performance of the models under consideration.
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
