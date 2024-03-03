@@ -26,7 +26,9 @@ Dataset with the text of 10% of the entire Stack Overflow question and answer co
 
 - Questions.csv : This file includes unique identifiers for the users who created each question, as well as for the questions themselves. It also provides timestamps for when each question was created and closed, along with the cumulative reaction score (positive, negative, or zero) for each question. Additionally, it contains the title and main body of each question.
 
-- Tags.csv: This file contains unique identifiers for each question, along with one or more associated tags. You can download the dataset from [here](https://www.kaggle.com/datasets/stackoverflow/stacksample/data).
+- Tags.csv: This file contains unique identifiers for each question, along with one or more associated tags.
+
+You can download the dataset from [here](https://www.kaggle.com/datasets/stackoverflow/stacksample/data).
 
 ### Installation
 
@@ -66,13 +68,20 @@ Furthermore, we've utilized the **Multilabel Binarizer** to encode the multilabe
 
 For evaluating the performance of our models, we've chosen several metrics including **Hamming loss, recall, F1 score, support, Jaccard score, and precision**. These metrics provide insights into different aspects of the model's performance, such as its ability to correctly classify each label, handle imbalanced data, and capture the trade-off between precision and recall.
 
+#### LLM:
+
+For the Long-Text Multilabel (LLM) task, we chose the BERT model. Due to GPU limitations, we ran the BERT model training and evaluation in Google Colab. Utilizing BERT for text classification, we leveraged its deep contextualized representations. To handle the multilabel nature of the task, have been used **Multilabel Binarizer** to encode tags into binary format. For detailed evaluation, have been used ***Classification Report**, providing **precision**, **recall**, **F1-score**  for each label. Additionally, we assessed model performance using **Hamming loss**, **accuracy**, and **loss metrics**. Furthermore, we calculated the **Jaccard score** to measure the similarity between predicted and true labels.
+
+# III.  Results:
+
+| Model | Accuracy | Jaccard Score | Hamming Loss |
+|-------|----------|---------------|--------------|
+| SVC   | 0.56     | 0.58          | 0.0376       |
+| SGD   | 0.52     | 0.52          | 0.04         |
+| BERT  | 0.77     | 0.58          | 0.0376       |
 
 
-
-
-
-
-
+This table represents the evaluation results for different models based on question **scores** **greater than 5**, filtered for the **most common** **15 tags**. The metrics include accuracy, Jaccard score, and Hamming loss.
 
 
 
